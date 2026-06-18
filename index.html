@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Quad Biking Essaouira | Sidi Kaouki – Kaouki Quads Morocco</title>
+<meta name="description" content="Best quad biking in Essaouira & Sidi Kaouki. Beach, dunes & Berber villages. From 249 MAD. Book instantly on WhatsApp. Expert guide. All levels welcome."/>
+<meta name="keywords" content="quad biking Essaouira, quad Sidi Kaouki, ATV Morocco, things to do Essaouira, quad tour Morocco"/>
+<meta property="og:title" content="Quad Biking Essaouira – Kaouki Quads & Outdoor Experiences"/>
+<meta property="og:description" content="Ride Morocco's wild Atlantic coast. Beach, dunes & Berber villages. Book via WhatsApp in seconds!"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TouristAttraction","name":"Kaouki Quads & Outdoor Experiences","description":"Quad biking tours on the Atlantic coast near Essaouira, Morocco","telephone":"+212662683025","address":{"@type":"PostalAddress","streetAddress":"Sidi Kaouki Beach","addressLocality":"Essaouira","addressCountry":"MA"},"priceRange":"249-1400 MAD","openingHours":"Mo-Su 08:00-18:00"}</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --sand:#F7F2EB;--sand2:#EDE3D5;--ocean:#4A8FA3;--ocean-d:#2E6B7E;
+  --terra:#C47B45;--terra-l:#E8A97A;--dark:#2A2118;--text:#4A3F38;
+  --light:#FDFAF7;--white:#fff;--wa:#25D366;--wa-d:#1ead54;--border:#E8DDD2
+}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',sans-serif;background:var(--light);color:var(--text);line-height:1.6}
+
+/* ── LANGUAGE SWITCHER (fixed, always visible) ── */
+.lang-sw{position:fixed;top:50%;right:0;transform:translateY(-50%);z-index:99999;display:flex;flex-direction:column;gap:6px;padding:10px 8px;background:rgba(11,61,76,.75);backdrop-filter:blur(12px);border-radius:14px 0 0 14px;box-shadow:-3px 0 18px rgba(0,0,0,.2)}
+.lang-sw button{width:40px;height:40px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;border-radius:10px;font-size:.7rem;font-weight:700;cursor:pointer;transition:.2s;font-family:'Inter',sans-serif;letter-spacing:.03em;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1px;line-height:1.1}
+.lang-sw button:hover{background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.5)}
+.lang-sw button.active{background:var(--terra);border-color:var(--terra);box-shadow:0 2px 10px rgba(196,123,69,.4)}
+.lang-sw button span{font-size:.9rem;line-height:1}
+.lang-sw button em{font-style:normal;font-size:.58rem;opacity:.85}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:9999;transition:all .35s}
+nav.scrolled{background:rgba(253,250,247,.97);backdrop-filter:blur(14px);box-shadow:0 2px 20px rgba(0,0,0,.08)}
+.ni{display:flex;align-items:center;justify-content:space-between;height:70px;padding:0 5%;max-width:1280px;margin:0 auto}
+.nlogo img{height:42px;width:auto;transition:filter .3s}
+nav:not(.scrolled) .nlogo img{filter:brightness(0) invert(1)}
+nav.scrolled .nlogo img{filter:none}
+.nl{display:flex;gap:1.8rem;list-style:none;align-items:center}
+.nl a{text-decoration:none;font-size:.875rem;font-weight:500;position:relative;padding:6px 0;transition:color .2s;cursor:pointer}
+.nl a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--terra);transition:.3s}
+.nl a:hover::after{width:100%}
+nav:not(.scrolled) .nl a{color:rgba(255,255,255,.9)}
+nav.scrolled .nl a{color:var(--text)}
+.nl a:hover{color:var(--terra)!important}
+.ncta{background:var(--wa)!important;color:#fff!important;padding:.45rem 1.15rem;border-radius:50px;font-weight:600!important}
+.ncta::after{display:none!important}
+.ncta:hover{background:var(--wa-d)!important}
+.hbg{display:none;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;cursor:pointer;background:none;border:none;padding:4px;z-index:10001;flex-shrink:0}
+.hbg span{display:block;width:24px;height:2px;border-radius:2px;transition:all .3s}
+nav:not(.scrolled) .hbg span{background:#fff}
+nav.scrolled .hbg span{background:var(--dark)}
+.hbg.open span:nth-child(1){transform:translateY(7px) rotate(45deg);background:var(--dark)!important}
+.hbg.open span:nth-child(2){opacity:0}
+.hbg.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);background:var(--dark)!important}
+@media(max-width:900px){.nl{display:none}.hbg{display:flex}}
+
+/* ── MOBILE DRAWER ── */
+.mob-ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9998;opacity:0;visibility:hidden;transition:.3s}
+.mob-ov.open{opacity:1;visibility:visible}
+.mob-drawer{position:fixed;top:0;right:-300px;width:270px;height:100%;background:#fff;z-index:9999;transition:right .35s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;overflow:hidden}
+.mob-drawer.open{right:0}
+.mob-top{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--border)}
+.mob-top img{height:36px;width:auto}
+.mob-close{background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--dark);line-height:1;padding:4px 8px}
+.mob-links{display:flex;flex-direction:column;padding:16px 12px;gap:4px;flex:1}
+.mob-links a{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--dark);font-size:.95rem;font-weight:500;padding:.75rem 1rem;border-radius:10px;transition:.2s}
+.mob-links a:hover{background:var(--sand);color:var(--terra)}
+.mob-links .mob-ico{width:32px;height:32px;border-radius:8px;background:var(--sand2);display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
+.mob-bottom{padding:16px 12px 28px}
+.mob-wa-btn{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--wa);color:#fff;text-decoration:none;font-size:.95rem;font-weight:700;padding:.9rem 1rem;border-radius:12px;transition:.2s}
+.mob-wa-btn:hover{background:var(--wa-d)}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.hbg-wrap{position:absolute;inset:0}
+.hbg-wrap video{width:100%;height:100%;object-fit:cover;display:block}
+.hov1{position:absolute;inset:0;background:linear-gradient(165deg,rgba(11,61,76,.65) 0%,rgba(11,61,76,.35) 55%,rgba(11,61,76,.65) 100%)}
+.hov2{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 45%)}
+.hc{position:relative;z-index:10;max-width:760px;text-align:center;padding:120px 24px 100px;color:#fff;animation:kfade .9s ease both;display:flex;flex-direction:column;align-items:center;gap:.65rem}
+@keyframes kfade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hloc{display:inline-flex;align-items:center;gap:6px;background:var(--terra);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.4rem 1rem;border-radius:50px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5.5vw,3.8rem);font-weight:700;line-height:1.1;text-shadow:0 2px 24px rgba(0,0,0,.4);color:#fff;margin:0}
+.hero h1 span{color:var(--terra-l)}
+.htag{font-size:clamp(.75rem,1.8vw,1rem);font-weight:500;letter-spacing:.1em;color:rgba(255,255,255,.75);text-transform:uppercase;margin:0}
+.htag b{margin:0 .3rem;opacity:.4;font-weight:300}
+.hbtns{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center;margin-top:.4rem}
+.btnwa{display:inline-flex;align-items:center;gap:.55rem;background:var(--wa);color:#fff;padding:.9rem 1.9rem;border-radius:12px;font-size:.95rem;font-weight:700;text-decoration:none;transition:all .25s;box-shadow:0 6px 20px rgba(37,211,102,.35)}
+.btnwa:hover{background:var(--wa-d);transform:translateY(-2px)}
+.btnwa svg{width:18px;height:18px;flex-shrink:0}
+.btng{display:inline-flex;align-items:center;gap:.55rem;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);color:#fff;padding:.9rem 1.9rem;border-radius:12px;font-size:.95rem;font-weight:600;text-decoration:none;border:1.5px solid rgba(255,255,255,.3);transition:.25s}
+.btng:hover{background:rgba(255,255,255,.2)}
+.bdgs{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:560px;margin-top:.2rem}
+.bdg{display:flex;flex-direction:column;align-items:center;gap:.45rem}
+.bico{width:48px;height:48px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;display:flex;align-items:center;justify-content:center;transition:.25s}
+.bdg:hover .bico{background:rgba(255,255,255,.18);transform:translateY(-3px)}
+.bico svg{color:#fff;width:20px;height:20px}
+.blbl{font-size:.65rem;font-weight:600;text-align:center;line-height:1.4;color:rgba(255,255,255,.8)}
+.hscrl{position:absolute;bottom:5rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.45);animation:kbnc 2s infinite;z-index:10}
+@keyframes kbnc{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-8px)}}
+.strip{position:absolute;bottom:0;left:0;right:0;z-index:10;display:flex;justify-content:center}
+.si{flex:1;max-width:300px;background:rgba(11,61,76,.8);backdrop-filter:blur(12px);border-top:2px solid rgba(37,211,102,.5);padding:1rem 1.2rem;display:flex;align-items:center;gap:.65rem;color:#fff}
+.siico{font-size:1.2rem;flex-shrink:0}
+.sitxt strong{display:block;font-size:.78rem;font-weight:700}
+.sitxt span{font-size:.68rem;color:rgba(255,255,255,.55)}
+
+/* ── SECTIONS ── */
+.sec{padding:5rem 5%}
+.wrap{max-width:1200px;margin:0 auto}
+.slbl{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ocean);margin-bottom:.6rem;display:block}
+h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);color:var(--dark);line-height:1.2;margin-bottom:.85rem}
+.ssub{font-size:.95rem;color:var(--text);max-width:500px;line-height:1.75;font-weight:300}
+.sh{margin-bottom:3rem}
+
+/* ── CARDS ── */
+.svcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.5rem}
+.sc{background:var(--white);border-radius:20px;overflow:hidden;box-shadow:0 2px 18px rgba(0,0,0,.06);transition:.3s;border:1px solid var(--border)}
+.sc:hover{transform:translateY(-5px);box-shadow:0 14px 40px rgba(0,0,0,.11)}
+.sch{height:200px;position:relative;overflow:hidden}
+.sch img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.sc:hover .sch img{transform:scale(1.04)}
+.dur{position:absolute;top:.75rem;right:.75rem;background:var(--ocean);color:#fff;font-size:.7rem;font-weight:700;padding:.28rem .7rem;border-radius:50px;z-index:2}
+.sbdg{position:absolute;top:.75rem;left:.75rem;background:var(--terra);color:#fff;font-size:.68rem;font-weight:700;padding:.25rem .6rem;border-radius:50px;z-index:2}
+.slider{height:200px;position:relative;overflow:hidden}
+.slides{display:flex;height:100%;transition:transform .5s ease}
+.slide{min-width:100%;height:100%;flex-shrink:0}
+.slide img{width:100%;height:100%;object-fit:cover;display:block}
+.sarr{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.45);color:#fff;border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;z-index:3;transition:.2s}
+.sarr:hover{background:rgba(0,0,0,.7)}
+.sarr.prev{left:.5rem}.sarr.next{right:.5rem}
+.sdots{position:absolute;bottom:.5rem;left:50%;transform:translateX(-50%);display:flex;gap:.35rem;z-index:3}
+.sdot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.5);cursor:pointer;transition:.2s}
+.sdot.active{background:#fff}
+.scb{padding:1.4rem 1.5rem}
+.scn{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--dark);margin-bottom:.3rem}
+.sct{font-size:.8rem;color:var(--ocean);font-weight:500;font-style:italic;margin-bottom:.7rem}
+.scd{font-size:.84rem;color:var(--text);line-height:1.7;font-weight:300}
+.inc{margin:.9rem 0;padding:.75rem 1rem;background:var(--sand);border-radius:10px;font-size:.78rem;color:var(--text)}
+.inc strong{color:var(--dark);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:.35rem}
+.inc li{list-style:none;padding:.12rem 0;display:flex;align-items:center;gap:.4rem}
+.inc li::before{content:'✓';color:var(--ocean);font-weight:700}
+.scf{display:flex;align-items:center;justify-content:space-between;margin-top:1rem}
+.pr{font-weight:700;color:var(--terra);font-size:1.05rem}
+.pr small{font-size:.72rem;color:var(--text);font-weight:400}
+.bk{display:inline-flex;align-items:center;background:var(--ocean);color:#fff;border:none;padding:.5rem 1.15rem;border-radius:50px;font-size:.8rem;font-weight:600;cursor:pointer;text-decoration:none;transition:.2s}
+.bk:hover{background:var(--ocean-d)}
+
+/* ── WHY ── */
+.why{background:var(--dark);padding:5rem 5%;color:#fff}
+.why .slbl{color:var(--terra-l)}
+.why h2{color:#fff}
+.why .ssub{color:rgba(255,255,255,.6)}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.3rem;margin-top:2.5rem}
+.feat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:1.5rem}
+.ftic{width:42px;height:42px;background:var(--terra);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:1rem}
+.feat h3{font-size:.9rem;font-weight:600;color:#fff;margin-bottom:.4rem}
+.feat p{font-size:.82rem;color:rgba(255,255,255,.55);line-height:1.65}
+
+/* ── BOOKING ── */
+.bsec{background:var(--sand);padding:5rem 5%}
+.bopts{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;max-width:780px;margin:2.5rem auto 0}
+.bcard{background:#fff;border-radius:18px;padding:1.8rem;border:2px solid transparent;transition:.3s}
+.bcard:hover{border-color:var(--ocean);box-shadow:0 8px 28px rgba(74,143,163,.13)}
+.bci{font-size:1.8rem;margin-bottom:.65rem}
+.bct{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--dark);margin-bottom:.4rem}
+.bcd{font-size:.82rem;color:var(--text);line-height:1.65;font-weight:300;margin-bottom:1.1rem}
+.bca{display:inline-flex;align-items:center;gap:.45rem;font-size:.85rem;font-weight:600;text-decoration:none;padding:.55rem 1.2rem;border-radius:50px;transition:.2s}
+.bwa{background:var(--wa);color:#fff}.bwa:hover{background:var(--wa-d)}
+.bem{background:var(--ocean);color:#fff}.bem:hover{background:var(--ocean-d)}
+.pol{max-width:780px;margin:1.5rem auto 0;background:#fff;border-radius:14px;padding:1.2rem 1.5rem;font-size:.8rem;color:var(--text);border-left:3px solid var(--ocean);line-height:1.75}
+.pol strong{color:var(--dark)}
+
+/* ── REVIEWS ── */
+.grv{padding:80px 20px;background:#0B3D4C}
+.grw{max-width:1100px;margin:0 auto;text-align:center}
+.grw h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);color:#fff;margin-bottom:10px}
+.grw p{color:rgba(255,255,255,.65);font-size:.95rem}
+.grf{background:rgba(255,255,255,.08);border-radius:20px;padding:28px;margin:32px auto;border:1px solid rgba(255,255,255,.1);max-width:660px}
+.grs{color:#E67E22;font-size:1.4rem;letter-spacing:3px;margin-bottom:12px}
+.grt{color:rgba(255,255,255,.92);font-size:1rem;line-height:1.75;font-style:italic;margin-bottom:12px;font-weight:300}
+.gra{color:#E67E22;font-weight:600;font-size:.9rem}
+.grn{margin-top:20px;color:rgba(255,255,255,.4);font-size:.75rem}
+
+/* ── FAQ ── */
+.faq{background:var(--light);padding:5rem 5%}
+.flist{max-width:780px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.8rem}
+.fitem{background:#fff;border-radius:12px;border:1px solid var(--border);overflow:hidden}
+.fqb{width:100%;background:none;border:none;padding:1.1rem 1.4rem;text-align:left;font-family:'Inter',sans-serif;font-size:.9rem;font-weight:600;color:var(--dark);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.fqb:hover{color:var(--ocean)}
+.fqb .arr{color:var(--terra);transition:.3s;font-size:1rem}
+.fqb.open .arr{transform:rotate(180deg)}
+.fans{padding:0 1.4rem;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .2s}
+.fans.open{max-height:300px;padding:0 1.4rem 1.1rem}
+.fans p{font-size:.85rem;color:var(--text);line-height:1.75;font-weight:300}
+
+/* ── BLOG ── */
+.blog-strip-wrap{position:relative}
+.blog-strip{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.5rem;scrollbar-width:none}
+.blog-strip::-webkit-scrollbar{display:none}
+.blog-card{flex:0 0 240px;max-width:240px;background:var(--white);border-radius:20px;overflow:hidden;box-shadow:0 2px 18px rgba(0,0,0,.06);border:1px solid var(--border);transition:.3s;scroll-snap-align:start;cursor:pointer}
+.blog-card:hover{transform:translateY(-5px);box-shadow:0 14px 40px rgba(0,0,0,.11)}
+.blog-img{height:130px;overflow:hidden;position:relative}
+.blog-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.blog-card:hover .blog-img img{transform:scale(1.04)}
+.blog-body{padding:1rem 1.1rem}
+.blog-title{font-family:'Playfair Display',serif;font-size:.95rem;color:var(--dark);line-height:1.3;margin-bottom:.4rem}
+.blog-excerpt{font-size:.78rem;color:var(--text);line-height:1.6;font-weight:300;margin-bottom:.65rem}
+.blog-more{font-size:.75rem;font-weight:600;color:var(--ocean);text-decoration:none;display:inline-flex;align-items:center;gap:.25rem}
+.blog-more:hover{color:var(--ocean-d)}
+.blog-sarr{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.45);color:#fff;border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;z-index:3;transition:.2s}
+.blog-sarr:hover{background:rgba(0,0,0,.7)}
+.blog-sarr.prev{left:-.8rem}.blog-sarr.next{right:-.8rem}
+@media(max-width:768px){.blog-sarr{display:none}}
+
+/* ── LOCATION ── */
+.locsec{background:var(--sand2);padding:5rem 5%}
+.ling{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;max-width:1100px;margin:0 auto}
+.lmap{border-radius:20px;height:320px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.12)}
+.lmap iframe{width:100%;height:100%;border:0;display:block;border-radius:20px}
+.lrow{display:flex;gap:.7rem;align-items:flex-start;margin:.7rem 0}
+.lic{width:34px;height:34px;min-width:34px;background:var(--ocean);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.85rem}
+.lt h4{font-weight:600;color:var(--dark);font-size:.87rem;margin-bottom:.1rem}
+.lt p{font-size:.81rem;color:var(--text);font-weight:300}
+.lt a{color:var(--ocean)}
+
+/* ── FOOTER ── */
+.ft{background:var(--dark);color:rgba(255,255,255,.65);padding:2.5rem 5%;text-align:center}
+.ft p{font-size:.8rem;line-height:1.9}
+.ft a{color:var(--terra-l);text-decoration:none}
+.ftwa{display:inline-flex;align-items:center;gap:.45rem;background:var(--wa);color:#fff;padding:.55rem 1.3rem;border-radius:50px;font-size:.84rem;font-weight:600;text-decoration:none;margin:1rem 0 .5rem;transition:.2s}
+.ftwa:hover{background:var(--wa-d)}
+
+/* ── FLOATING WA ── */
+.flt{position:fixed;bottom:1.8rem;right:1.8rem;z-index:8000;background:var(--wa);color:#fff;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 20px rgba(37,211,102,.4);text-decoration:none;animation:kqp 2.5s infinite}
+@keyframes kqp{0%,100%{box-shadow:0 5px 20px rgba(37,211,102,.4)}50%{box-shadow:0 5px 28px rgba(37,211,102,.65)}}
+
+/* ── MOBILE ── */
+@media(max-width:768px){
+  .sec,.why,.bsec,.faq,.locsec{padding:3.5rem 5%}
+  .grv{padding:50px 16px}
+  .strip{display:none}
+  .hscrl{bottom:2rem}
+  .hc{padding:90px 20px 80px;gap:.5rem}
+  .hero h1{font-size:1.9rem}
+  .htag{font-size:.72rem}
+  .hbtns{flex-direction:column;align-items:stretch;width:100%;max-width:300px}
+  .btnwa,.btng{justify-content:center;padding:.85rem 1.4rem;font-size:.9rem}
+  .bdgs{grid-template-columns:repeat(4,1fr);gap:.5rem;max-width:100%}
+  .bico{width:42px;height:42px}
+  .bico svg{width:17px;height:17px}
+  .blbl{font-size:.6rem}
+  .svcs{grid-template-columns:1fr}
+  .sc{max-width:100%!important;grid-column:unset!important}
+  .feats{grid-template-columns:repeat(2,1fr);gap:.9rem}
+  .bopts{grid-template-columns:1fr}
+  .ling{grid-template-columns:1fr;gap:2rem}
+  .lmap{height:220px}
+  .lang-sw{padding:7px 5px;gap:4px}
+  .lang-sw button{width:34px;height:34px}
+  .lang-sw button span{font-size:.8rem}
+  .lang-sw button em{font-size:.52rem}
+}
+@media(max-width:400px){
+  .bdgs{grid-template-columns:repeat(2,1fr)}
+  .feats{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ── FIXED LANGUAGE SWITCHER ── -->
+<div class="lang-sw" id="langSw">
+  <button class="active" onclick="setLang('en',this)"><span>🇬🇧</span><em>EN</em></button>
+  <button onclick="setLang('fr',this)"><span>🇫🇷</span><em>FR</em></button>
+  <button onclick="setLang('es',this)"><span>🇪🇸</span><em>ES</em></button>
+</div>
+
+<!-- ── MOBILE OVERLAY ── -->
+<div class="mob-ov" id="mobOv" onclick="closeMenu()"></div>
+
+<!-- ── MOBILE DRAWER ── -->
+<div class="mob-drawer" id="mobDrawer">
+  <div class="mob-top">
+    <img src="https://static.wixstatic.com/media/fe8517_a1e967634f4f46e2b72f189211cd9662~mv2.png" alt="Kaouki Quads"/>
+    <button class="mob-close" onclick="closeMenu()">✕</button>
+  </div>
+  <div class="mob-links" id="mobLinks">
+    <a href="#adventures" onclick="closeMenu();sg(event,'adventures')"><span class="mob-ico">🏍</span><span data-t="nav_adv">Adventures</span></a>
+    <a href="#why" onclick="closeMenu();sg(event,'why')"><span class="mob-ico">⭐</span><span data-t="nav_why">Why Us</span></a>
+    <a href="#booking" onclick="closeMenu();sg(event,'booking')"><span class="mob-ico">📅</span><span data-t="nav_book">Book Now</span></a>
+    <a href="#faq" onclick="closeMenu();sg(event,'faq')"><span class="mob-ico">❓</span><span data-t="nav_faq">FAQ</span></a>
+    <a href="#location" onclick="closeMenu();sg(event,'location')"><span class="mob-ico">📍</span><span data-t="nav_loc">Location</span></a>
+    <a href="#blog" onclick="closeMenu();sg(event,'blog')"><span class="mob-ico">📝</span><span data-t="nav_blog">Blog</span></a>
+  </div>
+  <div class="mob-bottom">
+    <a href="https://wa.me/212662683025?text=Hello!%20I'd%20like%20to%20book!" target="_blank" class="mob-wa-btn" data-t="mob_wa">Book on WhatsApp</a>
+  </div>
+</div>
+
+<!-- ── NAV ── -->
+<nav id="kqNav">
+  <div class="ni">
+    <a href="#home" class="nlogo"><img src="https://static.wixstatic.com/media/fe8517_a1e967634f4f46e2b72f189211cd9662~mv2.png" alt="Kaouki Quads"/></a>
+    <ul class="nl">
+      <li><a href="#adventures" onclick="sg(event,'adventures')" data-t="nav_adv">Adventures</a></li>
+      <li><a href="#why" onclick="sg(event,'why')" data-t="nav_why">Why Us</a></li>
+      <li><a href="#booking" onclick="sg(event,'booking')" data-t="nav_book">Book</a></li>
+      <li><a href="#faq" onclick="sg(event,'faq')" data-t="nav_faq">FAQ</a></li>
+      <li><a href="#location" onclick="sg(event,'location')" data-t="nav_loc">Location</a></li>
+      <li><a href="#blog" onclick="sg(event,'blog')" data-t="nav_blog">Blog</a></li>
+      <li><a href="https://wa.me/212662683025?text=Hello!" target="_blank" class="ncta" data-t="nav_cta">Book Now</a></li>
+    </ul>
+    <button class="hbg" id="hbgBtn" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+  <div class="hbg-wrap">
+    <video autoplay muted loop playsinline poster="https://static.wixstatic.com/media/fe8517_e46a99938a6d4c1290b188353c02d8e0f001.jpg/v1/fill/w_1920,h_1080/fe8517_e46a99938a6d4c1290b188353c02d8e0f001.jpg">
+      <source src="https://video.wixstatic.com/video/fe8517_e46a99938a6d4c1290b188353c02d8e0/1080p/mp4/file.mp4" type="video/mp4"/>
+      <source src="https://video.wixstatic.com/video/fe8517_e46a99938a6d4c1290b188353c02d8e0/720p/mp4/file.mp4" type="video/mp4"/>
+    </video>
+    <div class="hov1"></div><div class="hov2"></div>
+  </div>
+  <div class="hc">
+    <div class="hloc" data-t="hero_loc">📍 Sidi Kaouki · Essaouira, Morocco</div>
+    <h1 data-t="hero_h1">Quad Biking on Morocco's<br><span>Wild Atlantic Coast</span></h1>
+    <p class="htag" data-t="hero_tag">Dunes <b>•</b> Beaches <b>•</b> Villages <b>•</b> Sunset Dinners</p>
+    <div class="hbtns">
+      <a href="https://wa.me/212662683025?text=Hello!%20I'd%20like%20to%20book!%0AName%3A%0ADate%3A%0AActivity%3A%0AGroup%3A" target="_blank" class="btnwa">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.515 6.515 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span data-t="btn_wa">Book via WhatsApp</span>
+      </a>
+      <a href="#adventures" onclick="sg(event,'adventures')" class="btng" data-t="btn_exp">Explore Adventures</a>
+    </div>
+    <div class="bdgs">
+      <div class="bdg"><div class="bico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><span class="blbl" data-t="bdg1">Safety<br>Included</span></div>
+      <div class="bdg"><div class="bico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><span class="blbl" data-t="bdg2">5-Star<br>Rated</span></div>
+      <div class="bdg"><div class="bico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><span class="blbl" data-t="bdg3">Expert<br>Guide</span></div>
+      <div class="bdg"><div class="bico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><span class="blbl" data-t="bdg4">Free<br>Cancel</span></div>
+    </div>
+  </div>
+  <div class="hscrl"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div>
+  <div class="strip">
+    <div class="si"><span class="siico">📍</span><div class="sitxt"><strong data-t="st1t">Sidi Kaouki Beach</strong><span data-t="st1s">27km south of Essaouira · Hotel pick-up</span></div></div>
+    <div class="si"><span class="siico">🕐</span><div class="sitxt"><strong data-t="st2t">Open Daily · 8AM–6PM</strong><span data-t="st2s">Sunset dinners until 8PM</span></div></div>
+    <div class="si"><span class="siico">💰</span><div class="sitxt"><strong data-t="st3t">From 249 MAD / person</strong><span data-t="st3s">Pay cash · No deposit</span></div></div>
+  </div>
+</section>
+
+<!-- ── ADVENTURES ── -->
+<section class="sec" id="adventures">
+  <div class="wrap">
+    <div class="sh"><span class="slbl" data-t="adv_lbl">Our Adventures · Quad Biking Essaouira</span><h2 data-t="adv_h2">Choose Your Quad Adventure</h2><p class="ssub" data-t="adv_sub">All tours from Sidi Kaouki Beach or your hotel. Helmets, safety briefing & guide included.</p></div>
+    <div class="svcs">
+      <article class="sc">
+        <div class="sch"><img src="https://static.wixstatic.com/media/fe8517_dd7c7573a6584efdb429b60320924dbf~mv2.jpg" alt="1-hour quad Sidi Kaouki"/><span class="dur" data-t="dur1">60 min</span><span class="sbdg" data-t="bdg_pop">Most Popular</span></div>
+        <div class="scb"><div class="scn" data-t="sc1n">1-Hour Quad Adventure</div><div class="sct" data-t="sc1t">"Fast, Fun, and Full of Coastal Energy."</div><div class="scd" data-t="sc1d">Race along sandy trails, Atlantic dunes and ocean-view tracks. Perfect for beginners — no experience needed.</div>
+        <div class="inc"><strong data-t="inc_lbl">Included</strong><ul><li data-t="sc1i1">Quad bike & fuel</li><li data-t="sc1i2">Helmet & safety gear</li><li data-t="sc1i3">Local guide</li><li data-t="sc1i4">Hotel pick-up (on request)</li></ul></div>
+        <div class="scf"><span class="pr">249 MAD <small data-t="per_p">/ person</small></span><a href="https://wa.me/212662683025?text=1-Hour%20Quad%20booking%0AName%3A%0ADate%3A%0AGroup%3A" target="_blank" class="bk" data-t="bk_now">Book Now</a></div></div>
+      </article>
+      <article class="sc">
+        <div class="sch"><img src="https://static.wixstatic.com/media/fe8517_66c761cb72ee48e1a5f102580e26c643~mv2.jpg" alt="2-hour quad sunset"/><span class="dur" data-t="dur2">2 hours</span></div>
+        <div class="scb"><div class="scn" data-t="sc2n">2-Hour Quad Adventure</div><div class="sct" data-t="sc2t">"From ocean trails to golden dunes — adventure awaits!"</div><div class="scd" data-t="sc2d">Explore the full coastline on a 2-hour ride. Midway stop for a traditional Berber tea on the beach.</div>
+        <div class="inc"><strong data-t="inc_lbl">Included</strong><ul><li data-t="sc2i1">Quad bike & fuel</li><li data-t="sc2i2">Helmet & safety gear</li><li data-t="sc2i3">Expert guide</li><li data-t="sc2i4">Berber tea stop on beach</li><li data-t="sc2i5">Hotel pick-up (on request)</li></ul></div>
+        <div class="scf"><span class="pr">488 MAD <small data-t="per_p">/ person</small></span><a href="https://wa.me/212662683025?text=2-Hour%20Quad%20booking%0AName%3A%0ADate%3A%0AGroup%3A" target="_blank" class="bk" data-t="bk_now">Book Now</a></div></div>
+      </article>
+      <article class="sc">
+        <div class="slider" id="sl4h"><div class="slides" id="sl4h-inner"><div class="slide"><img src="https://static.wixstatic.com/media/fe8517_d8fcea35fa1b488fb3fab42f6cebd251~mv2.jpg" alt="4h"/></div><div class="slide"><img src="https://static.wixstatic.com/media/fe8517_ab6b970010614223b77886b0aae73709~mv2.jpg" alt="4h dunes"/></div><div class="slide"><img src="https://static.wixstatic.com/media/fe8517_0d647e9460844d33ac2eb46a78fc01e3~mv2.jpg" alt="4h sunset"/></div></div><button class="sarr prev" onclick="slide('sl4h',-1)">‹</button><button class="sarr next" onclick="slide('sl4h',1)">›</button><div class="sdots" id="sl4h-dots"></div><span class="dur" data-t="dur3">4 hours</span><span class="sbdg" data-t="bdg_fav">Fan Favourite</span></div>
+        <div class="scb"><div class="scn" data-t="sc3n">4-Hour Adventure & Sunset Dinner</div><div class="sct" data-t="sc3t">"Beaches, Dunes, Villages & Sunset Views!"</div><div class="scd" data-t="sc3d">Quad through Cap Sim dunes and Berber villages. Unwind with a sunset dinner in a Berber tent — grilled fish, chicken & local specialties.</div>
+        <div class="inc"><strong data-t="inc_lbl">Included</strong><ul><li data-t="sc3i1">Quad bike & fuel</li><li data-t="sc3i2">Cap Sim dunes ride</li><li data-t="sc3i3">Berber village tour</li><li data-t="sc3i4">Sunset Berber tent dinner</li><li data-t="sc3i5">Grilled fish & local food</li></ul></div>
+        <div class="scf"><span class="pr">900 MAD <small data-t="per_p">/ person</small></span><a href="https://wa.me/212662683025?text=4-Hour%20Sunset%20Dinner%20booking%0AName%3A%0ADate%3A%0AGroup%3A" target="_blank" class="bk" data-t="bk_now">Book Now</a></div></div>
+      </article>
+      <article class="sc" style="grid-column:1/-1;max-width:560px;margin:0 auto;width:100%">
+        <div class="slider" id="slfd"><div class="slides" id="slfd-inner"><div class="slide"><img src="https://static.wixstatic.com/media/fe8517_c44c913b8ca34fef9bf71781b1188ae8~mv2.jpg" alt="Iftane"/></div><div class="slide"><img src="https://static.wixstatic.com/media/fe8517_3af00085729a4fc597aaf61cb8939f91~mv2.jpg" alt="Full day"/></div><div class="slide"><img src="https://static.wixstatic.com/media/fe8517_868b9fa7dcd046deb8eb4eeccdc345b5~mv2.jpg" alt="Beach"/></div><div class="slide"><img src="https://static.wixstatic.com/media/fe8517_ac1211a4459746e595d3092fa7489dc8~mv2.jpg" alt="Morocco"/></div><div class="slide"><img src="https://static.wixstatic.com/media/fe8517_358484f8a276465093af9436c43339d2~mv2.jpg" alt="Kaouki"/></div></div><button class="sarr prev" onclick="slide('slfd',-1)">‹</button><button class="sarr next" onclick="slide('slfd',1)">›</button><div class="sdots" id="slfd-dots"></div><span class="dur" data-t="dur4">Full Day</span><span class="sbdg" data-t="bdg_val">Best Value</span></div>
+        <div class="scb"><div class="scn" data-t="sc4n">Full-Day Quad to Iftane Beach</div><div class="sct" data-t="sc4t">"Discover Morocco's wild coast on a full-day journey to hidden Iftane Beach!"</div><div class="scd" data-t="sc4d">The ultimate adventure with guide Mohammed (8+ years). Cross dunes & Berber villages, reach Iftane Beach for a fresh lunch. Swim, relax, ride back for sunset tea.</div>
+        <div class="inc"><strong data-t="inc_lbl">Included</strong><ul style="display:grid;grid-template-columns:1fr 1fr;gap:.1rem"><li data-t="sc4i1">Quad bike & fuel</li><li data-t="sc4i2">Helmets & safety gear</li><li data-t="sc4i3">Guide Mohammed</li><li data-t="sc4i4">Lunch at Iftane Beach</li><li data-t="sc4i5">Berber tea at sunset</li><li data-t="sc4i6">Hotel pick-up</li></ul></div>
+        <div class="scf"><span class="pr">1,400 MAD <small data-t="per_p">/ person</small></span><a href="https://wa.me/212662683025?text=Full-Day%20Iftane%20booking%0AName%3A%0ADate%3A%0AGroup%3A" target="_blank" class="bk" data-t="bk_now">Book Now</a></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY US ── -->
+<section class="why" id="why">
+  <div class="wrap"><span class="slbl" data-t="why_lbl">Why Kaouki Quads</span><h2 data-t="why_h2">The Kaouki Difference</h2><p class="ssub" data-t="why_sub">More than a tour company — your local family on this coast.</p>
+  <div class="feats">
+    <div class="feat"><div class="ftic">🧭</div><h3 data-t="f1h">Expert Local Guide</h3><p data-t="f1p">Mohammed has 8+ years guiding every dune, hidden beach & Berber path.</p></div>
+    <div class="feat"><div class="ftic">🛡️</div><h3 data-t="f2h">Full Safety Included</h3><p data-t="f2p">Helmets, briefing, professional gear — no extras, no surprises.</p></div>
+    <div class="feat"><div class="ftic">💬</div><h3 data-t="f3h">Instant WhatsApp Booking</h3><p data-t="f3p">Confirmed within minutes. Available every day.</p></div>
+    <div class="feat"><div class="ftic">💳</div><h3 data-t="f4h">Pay In-Person Only</h3><p data-t="f4p">Cash at end of tour. No deposit, zero risk.</p></div>
+    <div class="feat"><div class="ftic">🌍</div><h3 data-t="f5h">Authentic Morocco</h3><p data-t="f5p">Real Berber villages, real local tea. No tourist traps.</p></div>
+    <div class="feat"><div class="ftic">🔄</div><h3 data-t="f6h">Free Cancellation</h3><p data-t="f6p">Cancel or reschedule with 12 hours notice. No fees.</p></div>
+  </div></div>
+</section>
+
+<!-- ── BOOKING ── -->
+<section class="bsec" id="booking">
+  <div class="wrap" style="text-align:center">
+    <span class="slbl" data-t="bk_lbl">Reserve Your Adventure</span><h2 data-t="bk_h2">Book in Seconds</h2>
+    <p class="ssub" style="margin:0 auto" data-t="bk_sub">No waiting, no paperwork. Two easy ways to lock in your adventure.</p>
+    <div class="bopts">
+      <div class="bcard"><div class="bci">💬</div><div class="bct" data-t="bk1t">Book via WhatsApp</div><div class="bcd" data-t="bk1d">Message your name, date, activity & group size. Confirmed within minutes.</div><a href="https://wa.me/212662683025?text=Hello%20Kaouki%20Quads!%0AName%3A%0ADate%3A%0AActivity%3A%0AGroup%3A" target="_blank" class="bca bwa" data-t="bk1a">💬 Message on WhatsApp</a></div>
+      <div class="bcard"><div class="bci">✉️</div><div class="bct" data-t="bk2t">Send an Email Request</div><div class="bcd" data-t="bk2d">Send your booking details and we'll reply with confirmation and directions.</div><a href="mailto:kaoukioutdoors@gmail.com?subject=Quad%20Booking&body=Name%3A%0ADate%3A%0AActivity%3A%0AGroup%3A" class="bca bem" data-t="bk2a">✉️ Send Email</a></div>
+    </div>
+    <div class="pol" data-t="pol">📋 <strong>Booking Policy:</strong> Confirmed via WhatsApp or Email. <strong>Payment in cash</strong> at end of tour — no deposit. <strong>Free cancellation</strong> with 12h notice. Call: <a href="tel:+212662683025">+212 662 683 025</a></div>
+  </div>
+</section>
+
+<!-- ── REVIEWS ── -->
+<section class="grv" id="reviews">
+  <div class="grw">
+    <span class="slbl" style="color:#E67E22" data-t="rev_lbl">Verified Google Reviews</span>
+    <h2 data-t="rev_h2">What Our Guests Say</h2>
+    <p data-t="rev_sub">Real reviews — automatically updated from Google</p>
+    <div class="grf"><div class="grs">★★★★★</div><p class="grt" data-t="rev_qt">"Absolutely incredible experience! The sunset tour was magical. Our guide was professional and made us feel safe the entire time."</p><p class="gra" data-t="rev_au">— Sarah M.</p></div>
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-b48ebffd-ab9c-455a-865a-fabbdbd1d4d9" data-elfsight-app-lazy></div>
+    <p class="grn" data-t="rev_note">✓ Verified Google Reviews — real guests, real adventures</p>
+    <a href="https://g.page/r/CRHMNeMdPGyqEBM/review" target="_blank" style="display:inline-flex;align-items:center;gap:.5rem;margin-top:1.2rem;background:#fff;color:#2A2118;padding:.7rem 1.5rem;border-radius:50px;font-size:.85rem;font-weight:700;text-decoration:none" data-t="rev_btn">⭐ Review us on Google</a>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq" id="faq">
+  <div class="wrap" style="text-align:center">
+    <span class="slbl" data-t="faq_lbl">Frequently Asked Questions</span><h2 data-t="faq_h2">Everything You Need to Know</h2>
+    <div class="flist">
+      <div class="fitem"><button class="fqb" onclick="tog(this)"><span data-t="fq1">Where does the quad tour start?</span> <span class="arr">▾</span></button><div class="fans"><p data-t="fa1">All tours start at <strong>Sidi Kaouki Beach</strong>, ~27km south of Essaouira. Hotel pick-up available — just mention it when booking.</p></div></div>
+      <div class="fitem"><button class="fqb" onclick="tog(this)"><span data-t="fq2">Do I need quad biking experience?</span> <span class="arr">▾</span></button><div class="fans"><p data-t="fa2">Not at all! All tours suit <strong>complete beginners</strong>. Full safety briefing and practice session before the ride. All gear provided.</p></div></div>
+      <div class="fitem"><button class="fqb" onclick="tog(this)"><span data-t="fq3">How do I pay?</span> <span class="arr">▾</span></button><div class="fans"><p data-t="fa3"><strong>Cash in person at end of your tour.</strong> No online payment, no deposit. Book, show up, enjoy, pay at the end.</p></div></div>
+      <div class="fitem"><button class="fqb" onclick="tog(this)"><span data-t="fq4">What's included in the Full-Day Iftane Beach tour?</span> <span class="arr">▾</span></button><div class="fans"><p data-t="fa4">Quad & fuel, helmets, guide Mohammed, <strong>fresh lunch at Iftane Beach</strong>, Berber tea at sunset, photo stops, hotel pick-up. Just bring sunscreen!</p></div></div>
+      <div class="fitem"><button class="fqb" onclick="tog(this)"><span data-t="fq5">Can I cancel or reschedule?</span> <span class="arr">▾</span></button><div class="fans"><p data-t="fa5"><strong>Free cancellation or rescheduling</strong> with at least 12 hours notice. Just WhatsApp or email us.</p></div></div>
+      <div class="fitem"><button class="fqb" onclick="tog(this)"><span data-t="fq6">How far is Sidi Kaouki from Essaouira & Marrakech?</span> <span class="arr">▾</span></button><div class="fans"><p data-t="fa6">About <strong>27km south of Essaouira</strong> (~30 min) and ~<strong>200km from Marrakech</strong> (~2.5 hrs). Perfect day trip from either city.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BLOG ── -->
+<section class="sec" id="blog">
+  <div class="wrap">
+    <div class="sh"><span class="slbl" data-t="blog_lbl">Tips &amp; Guides · From Our Team</span><h2 data-t="blog_h2">Quad Biking Tips &amp; Local Guides</h2><p class="ssub" data-t="blog_sub">Everything you need to know before your adventure.</p></div>
+    <div class="blog-strip-wrap">
+      <button class="blog-sarr prev" onclick="blogScroll(-1)" aria-label="Previous">‹</button>
+      <div class="blog-strip" id="blogStrip">
+
+        <div class="blog-card" onclick="sg(event,'booking')">
+          <div class="blog-img"><img src="https://static.wixstatic.com/media/fe8517_dd7c7573a6584efdb429b60320924dbf~mv2.jpg" alt="Beginner quad guide"/></div>
+          <div class="blog-body">
+            <div class="blog-title" data-t="blog1t">First Quad Bike Tour — Beginner's Guide</div>
+            <div class="blog-excerpt" data-t="blog1e">Everything to expect on your first ride at Sidi Kaouki.</div>
+            <span class="blog-more" data-t="blog_more">Read more →</span>
+          </div>
+        </div>
+
+        <div class="blog-card" onclick="sg(event,'booking')">
+          <div class="blog-img"><img src="https://static.wixstatic.com/media/fe8517_dd7c7573a6584efdb429b60320924dbf~mv2.jpg" alt="Best season quad Essaouira"/></div>
+          <div class="blog-body">
+            <div class="blog-title" data-t="blog2t">Best Time for Quad Biking Near Essaouira</div>
+            <div class="blog-excerpt" data-t="blog2e">Season-by-season guide to the best riding conditions.</div>
+            <span class="blog-more" data-t="blog_more">Read more →</span>
+          </div>
+        </div>
+
+        <div class="blog-card" onclick="sg(event,'booking')">
+          <div class="blog-img"><img src="https://static.wixstatic.com/media/fe8517_dd7c7573a6584efdb429b60320924dbf~mv2.jpg" alt="Sunset quad tour golden hour"/></div>
+          <div class="blog-body">
+            <div class="blog-title" data-t="blog3t">Sunset Quad Tour — Golden Hour Experience</div>
+            <div class="blog-excerpt" data-t="blog3e">Why golden hour is the most magical time to ride.</div>
+            <span class="blog-more" data-t="blog_more">Read more →</span>
+          </div>
+        </div>
+
+        <div class="blog-card" onclick="sg(event,'booking')">
+          <div class="blog-img"><img src="https://static.wixstatic.com/media/fe8517_dd7c7573a6584efdb429b60320924dbf~mv2.jpg" alt="Things to do Essaouira Sidi Kaouki"/></div>
+          <div class="blog-body">
+            <div class="blog-title" data-t="blog4t">Things to Do in Essaouira &amp; Sidi Kaouki</div>
+            <div class="blog-excerpt" data-t="blog4e">Our complete local activity guide for visitors.</div>
+            <span class="blog-more" data-t="blog_more">Read more →</span>
+          </div>
+        </div>
+
+      </div>
+      <button class="blog-sarr next" onclick="blogScroll(1)" aria-label="Next">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── LOCATION ── -->
+<section class="locsec" id="location">
+  <div class="ling">
+    <div><span class="slbl" data-t="loc_lbl">Find Us · Sidi Kaouki, Morocco</span><h2 data-t="loc_h2">We're at Sidi Kaouki Beach</h2><br>
+      <div class="lrow"><div class="lic">📍</div><div class="lt"><h4 data-t="loc1h">Address</h4><p data-t="loc1p">Sidi Kaouki Beach, Essaouira, Morocco<br><small>~27km south of Essaouira · ~200km from Marrakech</small></p></div></div>
+      <div class="lrow"><div class="lic">📞</div><div class="lt"><h4 data-t="loc2h">Phone & WhatsApp</h4><p><a href="tel:+212662683025">+212 662 683 025</a></p></div></div>
+      <div class="lrow"><div class="lic">✉️</div><div class="lt"><h4 data-t="loc3h">Email</h4><p><a href="mailto:kaoukioutdoors@gmail.com">kaoukioutdoors@gmail.com</a></p></div></div>
+      <div class="lrow"><div class="lic">🕐</div><div class="lt"><h4 data-t="loc4h">Hours</h4><p data-t="loc4p">Every day · 8:00 AM – 6:00 PM<br><small>Full-day tours depart 8:30 AM</small></p></div></div>
+    </div>
+    <div class="lmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.7633026896012!2d-9.797968765627406!3d31.35549127194836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdad85e03923b72f%3A0xaa6c3c1de335cc11!2sKaouki%20Quads%20%26%20Outdoor%20Experiences!5e1!3m2!1sen!2sma!4v1781360544769!5m2!1sen!2sma" width="100%" height="100%" style="border:0;display:block;border-radius:20px" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="ft">
+  <p style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#fff;margin-bottom:.5rem" data-t="ft1">Kaouki Quads & Outdoor Experiences</p>
+  <p data-t="ft2">Quad Biking Essaouira · Sidi Kaouki Beach · Morocco<br><a href="mailto:kaoukioutdoors@gmail.com">kaoukioutdoors@gmail.com</a> · <a href="tel:+212662683025">+212 662 683 025</a></p>
+  <a href="https://wa.me/212662683025" target="_blank" class="ftwa" data-t="ft_wa">💬 Book on WhatsApp</a>
+  <p style="font-size:.7rem;opacity:.35;margin-top:.75rem" data-t="ft_copy">© 2025 Kaouki Quads & Outdoor Experiences · All rights reserved</p>
+</footer>
+
+<!-- ── FLOATING WA ── -->
+<a href="https://wa.me/212662683025" target="_blank" class="flt" aria-label="WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a6.515 6.515 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// ── NAV SCROLL
+window.addEventListener('scroll',function(){
+  document.getElementById('kqNav').classList.toggle('scrolled',window.scrollY>60);
+});
+
+// ── SMOOTH SCROLL
+function sg(e,id){e.preventDefault();var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth'});}
+
+// ── HAMBURGER
+function toggleMenu(){document.getElementById('mobDrawer').classList.contains('open')?closeMenu():openMenu();}
+function openMenu(){document.getElementById('mobDrawer').classList.add('open');document.getElementById('mobOv').classList.add('open');document.getElementById('hbgBtn').classList.add('open');document.body.style.overflow='hidden';}
+function closeMenu(){document.getElementById('mobDrawer').classList.remove('open');document.getElementById('mobOv').classList.remove('open');document.getElementById('hbgBtn').classList.remove('open');document.body.style.overflow='';}
+window.addEventListener('resize',function(){if(window.innerWidth>900)closeMenu();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu();});
+
+// ── FAQ
+function tog(b){
+  var a=b.nextElementSibling,o=a.classList.contains('open');
+  document.querySelectorAll('.fans.open').forEach(function(e){e.classList.remove('open')});
+  document.querySelectorAll('.fqb.open').forEach(function(e){e.classList.remove('open')});
+  if(!o){a.classList.add('open');b.classList.add('open');}
+}
+
+// ── SLIDERS
+var sliders={};
+function initSlider(id){
+  var el=document.getElementById(id+'-inner'),dots=document.getElementById(id+'-dots'),n=el.children.length;
+  sliders[id]={cur:0,n:n};dots.innerHTML='';
+  for(var i=0;i<n;i++){var d=document.createElement('div');d.className='sdot'+(i===0?' active':'');d.onclick=(function(x){return function(){goSlide(id,x);};})(i);dots.appendChild(d);}
+  setInterval((function(s){return function(){slide(s,1);};})(id),3500);
+}
+function goSlide(id,i){var s=sliders[id];s.cur=i;document.getElementById(id+'-inner').style.transform='translateX(-'+i*100+'%)';var d=document.getElementById(id+'-dots').children;for(var j=0;j<d.length;j++)d[j].classList.toggle('active',j===i);}
+function slide(id,dir){var s=sliders[id];goSlide(id,(s.cur+dir+s.n)%s.n);}
+window.addEventListener('load',function(){initSlider('sl4h');initSlider('slfd');});
+
+// ── BLOG STRIP SCROLL
+function blogScroll(dir){
+  var strip=document.getElementById('blogStrip');
+  var cardWidth=252; // 240px card + 12px gap
+  strip.scrollBy({left:dir*cardWidth,behavior:'smooth'});
+}
+
+// ── TRANSLATIONS
+var TR={
+en:{
+  nav_adv:'Adventures',nav_why:'Why Us',nav_book:'Book',nav_faq:'FAQ',nav_loc:'Location',nav_blog:'Blog',nav_cta:'Book Now',mob_wa:'Book on WhatsApp',
+  hero_loc:'📍 Sidi Kaouki · Essaouira, Morocco',
+  hero_h1:'Quad Biking on Morocco\'s<br><span style="color:var(--terra-l)">Wild Atlantic Coast</span>',
+  hero_tag:'Dunes <b>•</b> Beaches <b>•</b> Villages <b>•</b> Sunset Dinners',
+  btn_wa:'Book via WhatsApp',btn_exp:'Explore Adventures',
+  bdg1:'Safety<br>Included',bdg2:'5-Star<br>Rated',bdg3:'Expert<br>Guide',bdg4:'Free<br>Cancel',
+  st1t:'Sidi Kaouki Beach',st1s:'27km south of Essaouira · Hotel pick-up',
+  st2t:'Open Daily · 8AM–6PM',st2s:'Sunset dinners until 8PM',
+  st3t:'From 249 MAD / person',st3s:'Pay cash · No deposit',
+  adv_lbl:'Our Adventures · Quad Biking Essaouira',adv_h2:'Choose Your Quad Adventure',adv_sub:'All tours from Sidi Kaouki Beach or your hotel. Helmets, safety briefing & guide included.',
+  dur1:'60 min',dur2:'2 hours',dur3:'4 hours',dur4:'Full Day',
+  bdg_pop:'Most Popular',bdg_fav:'Fan Favourite',bdg_val:'Best Value',
+  inc_lbl:'Included',per_p:'/ person',bk_now:'Book Now',
+  sc1n:'1-Hour Quad Adventure',sc1t:'"Fast, Fun, and Full of Coastal Energy."',sc1d:'Race along sandy trails, Atlantic dunes and ocean-view tracks. Perfect for beginners — no experience needed.',
+  sc1i1:'Quad bike & fuel',sc1i2:'Helmet & safety gear',sc1i3:'Local guide',sc1i4:'Hotel pick-up (on request)',
+  sc2n:'2-Hour Quad Adventure',sc2t:'"From ocean trails to golden dunes — adventure awaits!"',sc2d:'Explore the full coastline on a 2-hour ride. Midway stop for a traditional Berber tea on the beach.',
+  sc2i1:'Quad bike & fuel',sc2i2:'Helmet & safety gear',sc2i3:'Expert guide',sc2i4:'Berber tea stop on beach',sc2i5:'Hotel pick-up (on request)',
+  sc3n:'4-Hour Adventure & Sunset Dinner',sc3t:'"Beaches, Dunes, Villages & Sunset Views!"',sc3d:'Quad through Cap Sim dunes and Berber villages. Unwind with a sunset dinner in a Berber tent — grilled fish, chicken & local specialties.',
+  sc3i1:'Quad bike & fuel',sc3i2:'Cap Sim dunes ride',sc3i3:'Berber village tour',sc3i4:'Sunset Berber tent dinner',sc3i5:'Grilled fish & local food',
+  sc4n:'Full-Day Quad to Iftane Beach',sc4t:'"Discover Morocco\'s wild coast on a full-day journey to hidden Iftane Beach!"',sc4d:'The ultimate adventure with guide Mohammed (8+ years). Cross dunes & Berber villages, reach Iftane Beach for a fresh lunch. Swim, relax, ride back for sunset tea.',
+  sc4i1:'Quad bike & fuel',sc4i2:'Helmets & safety gear',sc4i3:'Guide Mohammed',sc4i4:'Lunch at Iftane Beach',sc4i5:'Berber tea at sunset',sc4i6:'Hotel pick-up',
+  why_lbl:'Why Kaouki Quads',why_h2:'The Kaouki Difference',why_sub:'More than a tour company — your local family on this coast.',
+  f1h:'Expert Local Guide',f1p:'Mohammed has 8+ years guiding every dune, hidden beach & Berber path.',
+  f2h:'Full Safety Included',f2p:'Helmets, briefing, professional gear — no extras, no surprises.',
+  f3h:'Instant WhatsApp Booking',f3p:'Confirmed within minutes. Available every day.',
+  f4h:'Pay In-Person Only',f4p:'Cash at end of tour. No deposit, zero risk.',
+  f5h:'Authentic Morocco',f5p:'Real Berber villages, real local tea. No tourist traps.',
+  f6h:'Free Cancellation',f6p:'Cancel or reschedule with 12 hours notice. No fees.',
+  bk_lbl:'Reserve Your Adventure',bk_h2:'Book in Seconds',bk_sub:'No waiting, no paperwork. Two easy ways to lock in your adventure.',
+  bk1t:'Book via WhatsApp',bk1d:'Message your name, date, activity & group size. Confirmed within minutes.',bk1a:'💬 Message on WhatsApp',
+  bk2t:'Send an Email Request',bk2d:"Send your booking details and we'll reply with confirmation and directions.",bk2a:'✉️ Send Email',
+  pol:'📋 <strong>Booking Policy:</strong> Confirmed via WhatsApp or Email. <strong>Payment in cash</strong> at end of tour — no deposit. <strong>Free cancellation</strong> with 12h notice. Call: <a href="tel:+212662683025">+212 662 683 025</a>',
+  rev_lbl:'Verified Google Reviews',rev_h2:'What Our Guests Say',rev_sub:'Real reviews — automatically updated from Google',
+  rev_qt:'"Absolutely incredible experience! The sunset tour was magical. Our guide was professional and made us feel safe the entire time."',
+  rev_au:'— Sarah M.',rev_note:'✓ Verified Google Reviews — real guests, real adventures',rev_btn:'⭐ Review us on Google',
+  faq_lbl:'Frequently Asked Questions',faq_h2:'Everything You Need to Know',
+  fq1:'Where does the quad tour start?',fa1:'All tours start at <strong>Sidi Kaouki Beach</strong>, ~27km south of Essaouira. Hotel pick-up available — just mention it when booking.',
+  fq2:'Do I need quad biking experience?',fa2:'Not at all! All tours suit <strong>complete beginners</strong>. Full safety briefing and practice session before the ride. All gear provided.',
+  fq3:'How do I pay?',fa3:'<strong>Cash in person at end of your tour.</strong> No online payment, no deposit. Book, show up, enjoy, pay at the end.',
+  fq4:"What's included in the Full-Day Iftane Beach tour?",fa4:'Quad & fuel, helmets, guide Mohammed, <strong>fresh lunch at Iftane Beach</strong>, Berber tea at sunset, photo stops, hotel pick-up. Just bring sunscreen!',
+  fq5:'Can I cancel or reschedule?',fa5:'<strong>Free cancellation or rescheduling</strong> with at least 12 hours notice. Just WhatsApp or email us.',
+  fq6:'How far is Sidi Kaouki from Essaouira & Marrakech?',fa6:'About <strong>27km south of Essaouira</strong> (~30 min) and ~<strong>200km from Marrakech</strong> (~2.5 hrs). Perfect day trip from either city.',
+  blog_lbl:'Tips & Guides · From Our Team',blog_h2:'Quad Biking Tips & Local Guides',blog_sub:'Everything you need to know before your adventure.',
+  blog1t:'First Quad Bike Tour — Beginner\'s Guide',blog1e:'Everything to expect on your first ride at Sidi Kaouki.',
+  blog2t:'Best Time for Quad Biking Near Essaouira',blog2e:'Season-by-season guide to the best riding conditions.',
+  blog3t:'Sunset Quad Tour — Golden Hour Experience',blog3e:'Why golden hour is the most magical time to ride.',
+  blog4t:'Things to Do in Essaouira & Sidi Kaouki',blog4e:'Our complete local activity guide for visitors.',
+  blog_more:'Read more →',
+  loc_lbl:'Find Us · Sidi Kaouki, Morocco',loc_h2:"We're at Sidi Kaouki Beach",
+  loc1h:'Address',loc1p:'Sidi Kaouki Beach, Essaouira, Morocco<br><small>~27km south of Essaouira · ~200km from Marrakech</small>',
+  loc2h:'Phone & WhatsApp',loc3h:'Email',loc4h:'Hours',loc4p:'Every day · 8:00 AM – 6:00 PM<br><small>Full-day tours depart 8:30 AM</small>',
+  ft1:'Kaouki Quads & Outdoor Experiences',ft2:'Quad Biking Essaouira · Sidi Kaouki Beach · Morocco<br><a href="mailto:kaoukioutdoors@gmail.com">kaoukioutdoors@gmail.com</a> · <a href="tel:+212662683025">+212 662 683 025</a>',
+  ft_wa:'💬 Book on WhatsApp',ft_copy:'© 2025 Kaouki Quads & Outdoor Experiences · All rights reserved'
+},
+fr:{
+  nav_adv:'Aventures',nav_why:'Pourquoi Nous',nav_book:'Réserver',nav_faq:'FAQ',nav_loc:'Localisation',nav_blog:'Blog',nav_cta:'Réserver',mob_wa:'Réserver sur WhatsApp',
+  hero_loc:'📍 Sidi Kaouki · Essaouira, Maroc',
+  hero_h1:'Quad sur la <span style="color:var(--terra-l)">Côte Atlantique Sauvage du Maroc</span>',
+  hero_tag:'Dunes <b>•</b> Plages <b>•</b> Villages <b>•</b> Dîners au Coucher du Soleil',
+  btn_wa:'Réserver via WhatsApp',btn_exp:'Voir les Aventures',
+  bdg1:'Équipement<br>Inclus',bdg2:'Noté<br>5 Étoiles',bdg3:'Guide<br>Expert',bdg4:'Annulation<br>Gratuite',
+  st1t:'Plage de Sidi Kaouki',st1s:"27km au sud d'Essaouira · Navette disponible",
+  st2t:'Ouvert tous les jours 8h–18h',st2s:"Dîners coucher de soleil jusqu'à 20h",
+  st3t:'À partir de 249 MAD / personne',st3s:'Paiement sur place · Sans acompte',
+  adv_lbl:'Nos Aventures · Quad à Essaouira',adv_h2:'Choisissez Votre Aventure Quad',adv_sub:'Tous les circuits depuis la plage de Sidi Kaouki ou votre hôtel. Casques, briefing & guide inclus.',
+  dur1:'60 min',dur2:'2 heures',dur3:'4 heures',dur4:'Journée Complète',
+  bdg_pop:'Le Plus Populaire',bdg_fav:'Coup de Cœur',bdg_val:'Meilleur Rapport',
+  inc_lbl:'Inclus',per_p:'/ personne',bk_now:'Réserver',
+  sc1n:'Aventure Quad 1 Heure',sc1t:'"Rapide, Fun et Plein d\'Énergie Côtière."',sc1d:"Roulez sur des pistes sablonneuses, des dunes atlantiques et des chemins avec vue sur l'océan. Parfait pour les débutants.",
+  sc1i1:'Quad & carburant',sc1i2:'Casque & équipement',sc1i3:'Guide local',sc1i4:'Navette hôtel (sur demande)',
+  sc2n:'Aventure Quad 2 Heures',sc2t:'"Des pistes océaniques aux dunes dorées — l\'aventure vous attend !"',sc2d:'Explorez tout le littoral sur 2 heures. Arrêt au milieu pour un thé berbère traditionnel sur la plage.',
+  sc2i1:'Quad & carburant',sc2i2:'Casque & équipement',sc2i3:'Guide expert',sc2i4:'Thé berbère sur la plage',sc2i5:'Navette hôtel (sur demande)',
+  sc3n:'Aventure 4h & Dîner Coucher de Soleil',sc3t:'"Plages, Dunes, Villages & Coucher de Soleil !"',sc3d:'Quad à travers les dunes de Cap Sim et villages berbères. Dîner au coucher du soleil dans une tente berbère — poisson grillé & spécialités locales.',
+  sc3i1:'Quad & carburant',sc3i2:'Circuit dunes Cap Sim',sc3i3:'Visite village berbère',sc3i4:'Dîner tente berbère',sc3i5:'Poisson grillé & cuisine locale',
+  sc4n:'Journée Complète Quad à Iftane Beach',sc4t:'"Découvrez la côte sauvage du Maroc jusqu\'à la cachée Iftane Beach !"',sc4d:"L'aventure ultime avec le guide Mohammed (8+ ans). Traversez dunes & villages berbères, atteignez Iftane Beach pour un déjeuner frais.",
+  sc4i1:'Quad & carburant',sc4i2:'Casques & équipement',sc4i3:'Guide Mohammed',sc4i4:'Déjeuner à Iftane Beach',sc4i5:'Thé berbère au coucher du soleil',sc4i6:'Navette hôtel',
+  why_lbl:'Pourquoi Kaouki Quads',why_h2:'La Différence Kaouki',why_sub:'Plus qu\'une agence — votre famille locale sur cette côte.',
+  f1h:'Guide Local Expert',f1p:'Mohammed guide ces pistes depuis 8+ ans. Chaque dune, plage cachée & chemin berbère.',
+  f2h:'Sécurité Complète Incluse',f2p:'Casques, briefing, équipement pro — sans surprises. La sécurité d\'abord.',
+  f3h:'Réservation WhatsApp Instantanée',f3p:'Confirmé en quelques minutes. Disponible chaque jour.',
+  f4h:'Paiement Sur Place Uniquement',f4p:'Espèces en fin de circuit. Pas d\'acompte, zéro risque.',
+  f5h:'Maroc Authentique',f5p:'Vrais villages berbères, vrai thé local. Pas de pièges à touristes.',
+  f6h:'Annulation Gratuite',f6p:'Annulez ou reportez avec 12h de préavis. Sans frais.',
+  bk_lbl:'Réservez Votre Aventure',bk_h2:'Réservez en Quelques Secondes',bk_sub:'Sans attente, sans paperasse. Deux façons simples de confirmer votre aventure.',
+  bk1t:'Réserver via WhatsApp',bk1d:'Le moyen le plus rapide — envoyez vos détails. Confirmé en quelques minutes.',bk1a:'💬 Ouvrir WhatsApp',
+  bk2t:'Envoyer une Demande Email',bk2d:'Remplissez vos coordonnées et nous confirmons par email avec toutes les infos.',bk2a:'✉️ Envoyer Email',
+  pol:'📋 <strong>Politique de réservation :</strong> Confirmé par WhatsApp ou Email. <strong>Paiement en espèces</strong> à la fin — sans acompte. <strong>Annulation gratuite</strong> sous 12h. Tél : <a href="tel:+212662683025">+212 662 683 025</a>',
+  rev_lbl:'Avis Google Vérifiés',rev_h2:'Ce Que Disent Nos Clients',rev_sub:'Vrais avis — mis à jour automatiquement depuis Google',
+  rev_qt:'"Une expérience absolument incroyable ! Le tour au coucher du soleil était magique. Notre guide était professionnel et nous a mis en confiance."',
+  rev_au:'— Sarah M.',rev_note:'✓ Avis Google vérifiés — vrais clients, vraies aventures',rev_btn:'⭐ Nous évaluer sur Google',
+  faq_lbl:'Questions Fréquentes',faq_h2:'Tout Ce Que Vous Devez Savoir',
+  fq1:'D\'où part le circuit quad ?',fa1:"Tous les circuits partent de la <strong>Plage de Sidi Kaouki</strong>, ~27km au sud d'Essaouira. Navette disponible.",
+  fq2:'Faut-il une expérience en quad ?',fa2:'Pas du tout ! Tous les circuits sont adaptés aux <strong>débutants complets</strong>. Briefing complet et tout l\'équipement fourni.',
+  fq3:'Comment se fait le paiement ?',fa3:'<strong>En espèces sur place à la fin du circuit.</strong> Pas de paiement en ligne, pas d\'acompte.',
+  fq4:"Qu'est-ce qui est inclus dans la journée complète à Iftane Beach ?",fa4:'Quad & carburant, casques, guide Mohammed, <strong>déjeuner frais à Iftane Beach</strong>, thé berbère au coucher du soleil, arrêts photos.',
+  fq5:'Puis-je annuler ou reporter ?',fa5:'<strong>Annulation ou report gratuit</strong> avec au moins 12 heures de préavis.',
+  fq6:"À quelle distance est Sidi Kaouki d'Essaouira et Marrakech ?",fa6:"À environ <strong>27km au sud d'Essaouira</strong> (~30 min) et ~<strong>200km de Marrakech</strong> (~2h30).",
+  blog_lbl:'Conseils & Guides · De Notre Équipe',blog_h2:'Conseils Quad & Guides Locaux',blog_sub:'Tout ce qu\'il faut savoir avant votre aventure.',
+  blog1t:'Premier Tour en Quad — Guide du Débutant',blog1e:'Tout ce qui vous attend lors de votre première balade à Sidi Kaouki.',
+  blog2t:'Meilleure Saison pour le Quad près d\'Essaouira',blog2e:'Guide saison par saison pour les meilleures conditions de conduite.',
+  blog3t:'Tour Quad au Coucher du Soleil — L\'Heure Dorée',blog3e:'Pourquoi l\'heure dorée est le moment le plus magique pour rouler.',
+  blog4t:'Activités à Essaouira & Sidi Kaouki',blog4e:'Notre guide complet des activités locales pour les visiteurs.',
+  blog_more:'Lire la suite →',
+  loc_lbl:'Nous Trouver · Sidi Kaouki, Maroc',loc_h2:'Nous Sommes à la Plage de Sidi Kaouki',
+  loc1h:'Adresse',loc1p:"Plage de Sidi Kaouki, Essaouira, Maroc<br><small>~27km au sud d'Essaouira · ~200km de Marrakech</small>",
+  loc2h:'Téléphone & WhatsApp',loc3h:'Email',loc4h:'Horaires',loc4p:'Chaque jour · 8h00 – 18h00<br><small>Tours journée complète départ à 8h30</small>',
+  ft1:'Kaouki Quads & Outdoor Experiences',ft2:'Quad Essaouira · Plage Sidi Kaouki · Maroc<br><a href="mailto:kaoukioutdoors@gmail.com">kaoukioutdoors@gmail.com</a> · <a href="tel:+212662683025">+212 662 683 025</a>',
+  ft_wa:'💬 Réserver sur WhatsApp',ft_copy:'© 2025 Kaouki Quads & Outdoor Experiences · Tous droits réservés'
+},
+es:{
+  nav_adv:'Aventuras',nav_why:'Por Qué Nosotros',nav_book:'Reservar',nav_faq:'FAQ',nav_loc:'Ubicación',nav_blog:'Blog',nav_cta:'Reservar',mob_wa:'Reservar por WhatsApp',
+  hero_loc:'📍 Sidi Kaouki · Esauira, Marruecos',
+  hero_h1:'Quad en la <span style="color:var(--terra-l)">Costa Atlántica Salvaje de Marruecos</span>',
+  hero_tag:'Dunas <b>•</b> Playas <b>•</b> Pueblos <b>•</b> Cenas al Atardecer',
+  btn_wa:'Reservar por WhatsApp',btn_exp:'Ver Aventuras',
+  bdg1:'Equipo<br>Incluido',bdg2:'Valorado<br>5 Estrellas',bdg3:'Guía<br>Experto',bdg4:'Cancelación<br>Gratuita',
+  st1t:'Playa de Sidi Kaouki',st1s:'27km al sur de Esauira · Traslado disponible',
+  st2t:'Abierto todos los días 8h–18h',st2s:'Cenas al atardecer hasta las 20h',
+  st3t:'Desde 249 MAD / persona',st3s:'Pago en efectivo · Sin depósito',
+  adv_lbl:'Nuestras Aventuras · Quad en Esauira',adv_h2:'Elige Tu Aventura en Quad',adv_sub:'Todos los tours desde la playa de Sidi Kaouki o tu hotel. Cascos, briefing de seguridad y guía incluidos.',
+  dur1:'60 min',dur2:'2 horas',dur3:'4 horas',dur4:'Día Completo',
+  bdg_pop:'Más Popular',bdg_fav:'Favorito',bdg_val:'Mejor Valor',
+  inc_lbl:'Incluido',per_p:'/ persona',bk_now:'Reservar',
+  sc1n:'Aventura Quad 1 Hora',sc1t:'"Rápido, Divertido y Lleno de Energía Costera."',sc1d:'Recorre pistas de arena, dunas atlánticas y caminos con vistas al océano. Perfecto para principiantes.',
+  sc1i1:'Quad & combustible',sc1i2:'Casco & equipo de seguridad',sc1i3:'Guía local',sc1i4:'Traslado hotel (bajo petición)',
+  sc2n:'Aventura Quad 2 Horas',sc2t:'"De los caminos del océano a las dunas doradas — ¡la aventura te espera!"',sc2d:'Explora toda la costa en un recorrido de 2 horas. Parada a mitad para un té bereber tradicional en la playa.',
+  sc2i1:'Quad & combustible',sc2i2:'Casco & equipo de seguridad',sc2i3:'Guía experto',sc2i4:'Parada té bereber en playa',sc2i5:'Traslado hotel (bajo petición)',
+  sc3n:'Aventura 4h & Cena al Atardecer',sc3t:'"¡Playas, Dunas, Pueblos y Vistas al Atardecer!"',sc3d:'Quad por las dunas de Cap Sim y pueblos bereberes. Relájate con una cena al atardecer en una jaima bereber — pescado a la brasa & especialidades locales.',
+  sc3i1:'Quad & combustible',sc3i2:'Recorrido dunas Cap Sim',sc3i3:'Visita pueblo bereber',sc3i4:'Cena jaima al atardecer',sc3i5:'Pescado a la brasa & comida local',
+  sc4n:'Día Completo Quad a Iftane Beach',sc4t:'"¡Descubre la costa salvaje de Marruecos en un viaje de día completo a la escondida Playa Iftane!"',sc4d:'La aventura definitiva con el guía Mohammed (8+ años). Cruza dunas & pueblos bereberes, llega a Iftane Beach para un almuerzo fresco.',
+  sc4i1:'Quad & combustible',sc4i2:'Cascos & equipo',sc4i3:'Guía Mohammed',sc4i4:'Almuerzo en Iftane Beach',sc4i5:'Té bereber al atardecer',sc4i6:'Traslado hotel',
+  why_lbl:'Por Qué Kaouki Quads',why_h2:'La Diferencia Kaouki',why_sub:'Más que una empresa de tours — tu familia local en esta costa.',
+  f1h:'Guía Local Experto',f1p:'Mohammed lleva 8+ años guiando estas rutas. Cada duna, playa oculta & camino bereber.',
+  f2h:'Seguridad Completa Incluida',f2p:'Cascos, briefing, equipo profesional — sin extras, sin sorpresas.',
+  f3h:'Reserva Instantánea por WhatsApp',f3p:'Confirmado en minutos. Disponible todos los días.',
+  f4h:'Pago Solo en Persona',f4p:'Efectivo al final del tour. Sin depósito, cero riesgo.',
+  f5h:'Marruecos Auténtico',f5p:'Pueblos bereberes reales, té local real. Sin trampas para turistas.',
+  f6h:'Cancelación Gratuita',f6p:'Cancela o cambia la fecha con 12 horas de antelación. Sin cargos.',
+  bk_lbl:'Reserva Tu Aventura',bk_h2:'Reserva en Segundos',bk_sub:'Sin esperas, sin papeleo. Dos maneras fáciles de confirmar tu aventura.',
+  bk1t:'Reservar por WhatsApp',bk1d:'La forma más rápida — envíanos tus datos. Confirmado en minutos.',bk1a:'💬 Abrir WhatsApp',
+  bk2t:'Enviar Solicitud por Email',bk2d:'Rellena tus datos y te respondemos por email con toda la información.',bk2a:'✉️ Enviar Email',
+  pol:'📋 <strong>Política de reservas:</strong> Confirmado por WhatsApp o Email. <strong>Pago en efectivo</strong> al final — sin depósito. <strong>Cancelación gratuita</strong> con 12h de antelación. Tel: <a href="tel:+212662683025">+212 662 683 025</a>',
+  rev_lbl:'Reseñas Verificadas de Google',rev_h2:'Lo Que Dicen Nuestros Clientes',rev_sub:'Reseñas reales — actualizadas automáticamente desde Google',
+  rev_qt:'"¡Una experiencia absolutamente increíble! El tour al atardecer fue mágico. Nuestro guía fue profesional y nos hizo sentir seguros en todo momento."',
+  rev_au:'— Sarah M.',rev_note:'✓ Reseñas verificadas de Google — clientes reales, aventuras reales',rev_btn:'⭐ Déjanos una reseña en Google',
+  faq_lbl:'Preguntas Frecuentes',faq_h2:'Todo Lo Que Necesitas Saber',
+  fq1:'¿Dónde empieza el tour en quad?',fa1:'Todos los tours salen de la <strong>Playa de Sidi Kaouki</strong>, ~27km al sur de Esauira. Traslado disponible.',
+  fq2:'¿Necesito experiencia en quad?',fa2:'¡Para nada! Todos los tours son aptos para <strong>principiantes</strong>. Briefing completo y todo el equipo incluido.',
+  fq3:'¿Cómo se realiza el pago?',fa3:'<strong>En efectivo al final del tour.</strong> Sin pago online, sin depósito.',
+  fq4:'¿Qué incluye el tour de día completo a Iftane Beach?',fa4:'Quad & combustible, cascos, guía Mohammed, <strong>almuerzo en Iftane Beach</strong>, té bereber al atardecer, paradas para fotos.',
+  fq5:'¿Puedo cancelar o cambiar la fecha?',fa5:'<strong>Cancelación o cambio gratuito</strong> con al menos 12 horas de antelación.',
+  fq6:'¿A qué distancia está Sidi Kaouki de Esauira y Marrakech?',fa6:'A unos <strong>27km al sur de Esauira</strong> (~30 min) y ~<strong>200km de Marrakech</strong> (~2,5 h).',
+  blog_lbl:'Consejos & Guías · De Nuestro Equipo',blog_h2:'Consejos de Quad & Guías Locales',blog_sub:'Todo lo que necesitas saber antes de tu aventura.',
+  blog1t:'Primer Tour en Quad — Guía para Principiantes',blog1e:'Todo lo que puedes esperar en tu primera salida en Sidi Kaouki.',
+  blog2t:'Mejor Época para el Quad cerca de Esauira',blog2e:'Guía temporada a temporada para las mejores condiciones de conducción.',
+  blog3t:'Tour Quad al Atardecer — La Hora Dorada',blog3e:'Por qué la hora dorada es el momento más mágico para montar.',
+  blog4t:'Qué Hacer en Esauira & Sidi Kaouki',blog4e:'Nuestra guía completa de actividades locales para visitantes.',
+  blog_more:'Leer más →',
+  loc_lbl:'Encuéntranos · Sidi Kaouki, Marruecos',loc_h2:'Estamos en la Playa de Sidi Kaouki',
+  loc1h:'Dirección',loc1p:'Playa Sidi Kaouki, Esauira, Marruecos<br><small>~27km al sur de Esauira · ~200km de Marrakech</small>',
+  loc2h:'Teléfono & WhatsApp',loc3h:'Email',loc4h:'Horario',loc4p:'Todos los días · 8:00 – 18:00<br><small>Tours día completo salen a las 8:30</small>',
+  ft1:'Kaouki Quads & Outdoor Experiences',ft2:'Quad Esauira · Playa Sidi Kaouki · Marruecos<br><a href="mailto:kaoukioutdoors@gmail.com">kaoukioutdoors@gmail.com</a> · <a href="tel:+212662683025">+212 662 683 025</a>',
+  ft_wa:'💬 Reservar por WhatsApp',ft_copy:'© 2025 Kaouki Quads & Outdoor Experiences · Todos los derechos reservados'
+}
+};
+
+function setLang(l,btn){
+  document.querySelectorAll('.lang-sw button').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  var t=TR[l];
+  document.querySelectorAll('[data-t]').forEach(function(el){
+    var k=el.getAttribute('data-t');
+    if(!t[k])return;
+    el.innerHTML=t[k];
+  });
+}
+</script>
+</body>
+</html>
