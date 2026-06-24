@@ -172,13 +172,37 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);color
 /* ── REVIEWS ── */
 .grv{padding:80px 20px;background:#0B3D4C}
 .grw{max-width:1100px;margin:0 auto;text-align:center}
-.grw h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);color:#fff;margin-bottom:10px}
-.grw p{color:rgba(255,255,255,.65);font-size:.95rem}
-.grf{background:rgba(255,255,255,.08);border-radius:20px;padding:28px;margin:32px auto;border:1px solid rgba(255,255,255,.1);max-width:660px}
-.grs{color:#E67E22;font-size:1.4rem;letter-spacing:3px;margin-bottom:12px}
-.grt{color:rgba(255,255,255,.92);font-size:1rem;line-height:1.75;font-style:italic;margin-bottom:12px;font-weight:300}
-.gra{color:#E67E22;font-weight:600;font-size:.9rem}
+.grw>h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);color:#fff;margin-bottom:10px}
+.grw>p{color:rgba(255,255,255,.65);font-size:.95rem}
 .grn{margin-top:20px;color:rgba(255,255,255,.4);font-size:.75rem}
+/* rating summary */
+.gr-summary{display:flex;align-items:center;justify-content:center;gap:1rem;margin:1.5rem 0 2.5rem;flex-wrap:wrap}
+.gr-score{font-family:'Playfair Display',serif;font-size:3.5rem;color:#fff;font-weight:700;line-height:1}
+.gr-meta{text-align:left}
+.gr-stars-big{color:#F5A623;font-size:1.5rem;letter-spacing:2px;line-height:1;margin-bottom:.2rem}
+.gr-count{color:rgba(255,255,255,.55);font-size:.8rem}
+.gr-badge{display:flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:50px;padding:.35rem .85rem;color:rgba(255,255,255,.7);font-size:.75rem;font-weight:600}
+.gr-badge svg{width:16px;height:16px;flex-shrink:0}
+/* carousel */
+.gr-carousel{position:relative;overflow:hidden;margin:0 -20px}
+.gr-track{display:flex;gap:1.2rem;transition:transform .45s cubic-bezier(.4,0,.2,1);padding:0 20px 8px}
+.gr-card{flex:0 0 320px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:1.6rem 1.7rem;text-align:left;transition:.3s}
+.gr-card:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.2)}
+.gr-card-top{display:flex;align-items:center;gap:.75rem;margin-bottom:1rem}
+.gr-avatar{width:44px;height:44px;border-radius:50%;background:var(--terra);display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;color:#fff;flex-shrink:0;font-family:'Playfair Display',serif}
+.gr-name{font-weight:600;color:#fff;font-size:.9rem;line-height:1.2}
+.gr-date{color:rgba(255,255,255,.4);font-size:.73rem;margin-top:.1rem}
+.gr-stars{color:#F5A623;font-size:.95rem;letter-spacing:1px;margin-bottom:.6rem}
+.gr-text{color:rgba(255,255,255,.82);font-size:.85rem;line-height:1.75;font-weight:300;font-style:italic}
+.gr-src{display:flex;align-items:center;gap:.35rem;margin-top:1rem;color:rgba(255,255,255,.35);font-size:.72rem}
+.gr-src svg{width:13px;height:13px;flex-shrink:0}
+/* nav */
+.gr-nav{display:flex;align-items:center;justify-content:center;gap:1rem;margin-top:2rem}
+.gr-btn{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.2s;flex-shrink:0}
+.gr-btn:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.4)}
+.gr-dots-wrap{display:flex;gap:.45rem}
+.gr-dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.25);cursor:pointer;transition:.25s}
+.gr-dot.active{background:#F5A623;transform:scale(1.25)}
 
 /* ── FAQ ── */
 .faq{background:var(--light);padding:5rem 5%}
@@ -414,12 +438,95 @@ h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.4rem);color
   <div class="grw">
     <span class="slbl" style="color:#E67E22" data-t="rev_lbl">Verified Google Reviews</span>
     <h2 data-t="rev_h2">What Our Guests Say</h2>
-    <p data-t="rev_sub">Real reviews — automatically updated from Google</p>
-    <div class="grf"><div class="grs">★★★★★</div><p class="grt" data-t="rev_qt">"Absolutely incredible experience! The sunset tour was magical. Our guide was professional and made us feel safe the entire time."</p><p class="gra" data-t="rev_au">— Sarah M.</p></div>
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-b48ebffd-ab9c-455a-865a-fabbdbd1d4d9" data-elfsight-app-lazy></div>
+    <p data-t="rev_sub">Real reviews from real adventurers — all 5 stars on Google</p>
+
+    <div class="gr-summary">
+      <div class="gr-score">5.0</div>
+      <div class="gr-meta">
+        <div class="gr-stars-big">★★★★★</div>
+        <div class="gr-count" data-t="rev_count">6 reviews on Google</div>
+      </div>
+      <div class="gr-badge">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" fill="rgba(255,255,255,.6)"/></svg>
+        <svg viewBox="0 0 48 48" style="width:14px;height:14px"><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.6H24v8.7h12.4c-.5 2.7-2.1 5-4.4 6.6v5.4h7.1c4.2-3.9 6.6-9.6 6.6-16.1z"/><path fill="#34A853" d="M24 47c6.2 0 11.4-2 15.2-5.5l-7.1-5.4c-2 1.4-4.6 2.2-8.1 2.2-6.2 0-11.5-4.2-13.4-9.9H3.3v5.6C7.1 41.9 15 47 24 47z"/><path fill="#FBBC05" d="M10.6 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .8-4.4v-5.6H3.3C1.8 17.1 1 20.5 1 24s.8 6.9 2.3 9.9l7.3-5.5z"/><path fill="#EA4335" d="M24 9.7c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.4 2.7 30.2.5 24 .5 15 .5 7.1 5.6 3.3 13.1l7.3 5.5C12.5 13.9 17.8 9.7 24 9.7z"/></svg>
+        Google
+      </div>
+    </div>
+
+    <div class="gr-carousel" id="grCarousel">
+      <div class="gr-track" id="grTrack">
+
+        <div class="gr-card">
+          <div class="gr-card-top">
+            <div class="gr-avatar">S</div>
+            <div><div class="gr-name">Sebastien Feider</div><div class="gr-date">May 2026</div></div>
+          </div>
+          <div class="gr-stars">★★★★★</div>
+          <p class="gr-text">"An incredible experience with Mohamed, who takes great care of everyone and knows all the best places to discover! A must-do!"</p>
+          <div class="gr-src"><svg viewBox="0 0 48 48"><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.6H24v8.7h12.4c-.5 2.7-2.1 5-4.4 6.6v5.4h7.1c4.2-3.9 6.6-9.6 6.6-16.1z"/><path fill="#34A853" d="M24 47c6.2 0 11.4-2 15.2-5.5l-7.1-5.4c-2 1.4-4.6 2.2-8.1 2.2-6.2 0-11.5-4.2-13.4-9.9H3.3v5.6C7.1 41.9 15 47 24 47z"/><path fill="#FBBC05" d="M10.6 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .8-4.4v-5.6H3.3C1.8 17.1 1 20.5 1 24s.8 6.9 2.3 9.9l7.3-5.5z"/><path fill="#EA4335" d="M24 9.7c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.4 2.7 30.2.5 24 .5 15 .5 7.1 5.6 3.3 13.1l7.3 5.5C12.5 13.9 17.8 9.7 24 9.7z"/></svg> Posted on Google</div>
+        </div>
+
+        <div class="gr-card">
+          <div class="gr-card-top">
+            <div class="gr-avatar">A</div>
+            <div><div class="gr-name">Aurore Langlade</div><div class="gr-date">May 2026</div></div>
+          </div>
+          <div class="gr-stars">★★★★★</div>
+          <p class="gr-text">"Mohamed was a fantastic guide! We loved the experience — we discovered a magical, timeless place! I highly recommend it."</p>
+          <div class="gr-src"><svg viewBox="0 0 48 48"><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.6H24v8.7h12.4c-.5 2.7-2.1 5-4.4 6.6v5.4h7.1c4.2-3.9 6.6-9.6 6.6-16.1z"/><path fill="#34A853" d="M24 47c6.2 0 11.4-2 15.2-5.5l-7.1-5.4c-2 1.4-4.6 2.2-8.1 2.2-6.2 0-11.5-4.2-13.4-9.9H3.3v5.6C7.1 41.9 15 47 24 47z"/><path fill="#FBBC05" d="M10.6 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .8-4.4v-5.6H3.3C1.8 17.1 1 20.5 1 24s.8 6.9 2.3 9.9l7.3-5.5z"/><path fill="#EA4335" d="M24 9.7c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.4 2.7 30.2.5 24 .5 15 .5 7.1 5.6 3.3 13.1l7.3 5.5C12.5 13.9 17.8 9.7 24 9.7z"/></svg> Posted on Google</div>
+        </div>
+
+        <div class="gr-card">
+          <div class="gr-card-top">
+            <div class="gr-avatar">E</div>
+            <div><div class="gr-name">Elodie Loyen</div><div class="gr-date">Jan 2026</div></div>
+          </div>
+          <div class="gr-stars">★★★★★</div>
+          <p class="gr-text">"Quad biking past three beaches to the waterfalls — magnificent scenery! Stopped for grilled sea bream at sunset. Everything was perfect: the welcome, the meal, and the ride!"</p>
+          <div class="gr-src"><svg viewBox="0 0 48 48"><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.6H24v8.7h12.4c-.5 2.7-2.1 5-4.4 6.6v5.4h7.1c4.2-3.9 6.6-9.6 6.6-16.1z"/><path fill="#34A853" d="M24 47c6.2 0 11.4-2 15.2-5.5l-7.1-5.4c-2 1.4-4.6 2.2-8.1 2.2-6.2 0-11.5-4.2-13.4-9.9H3.3v5.6C7.1 41.9 15 47 24 47z"/><path fill="#FBBC05" d="M10.6 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .8-4.4v-5.6H3.3C1.8 17.1 1 20.5 1 24s.8 6.9 2.3 9.9l7.3-5.5z"/><path fill="#EA4335" d="M24 9.7c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.4 2.7 30.2.5 24 .5 15 .5 7.1 5.6 3.3 13.1l7.3 5.5C12.5 13.9 17.8 9.7 24 9.7z"/></svg> Posted on Google</div>
+        </div>
+
+        <div class="gr-card">
+          <div class="gr-card-top">
+            <div class="gr-avatar">S</div>
+            <div><div class="gr-name">Sarah Pelletier</div><div class="gr-date">Jan 2026</div></div>
+          </div>
+          <div class="gr-stars">★★★★★</div>
+          <p class="gr-text">"Fantastic welcome! A friendly and professional guide. Lunch at a great spot. Thank you so much for this lovely afternoon. Don't hesitate!"</p>
+          <div class="gr-src"><svg viewBox="0 0 48 48"><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.6H24v8.7h12.4c-.5 2.7-2.1 5-4.4 6.6v5.4h7.1c4.2-3.9 6.6-9.6 6.6-16.1z"/><path fill="#34A853" d="M24 47c6.2 0 11.4-2 15.2-5.5l-7.1-5.4c-2 1.4-4.6 2.2-8.1 2.2-6.2 0-11.5-4.2-13.4-9.9H3.3v5.6C7.1 41.9 15 47 24 47z"/><path fill="#FBBC05" d="M10.6 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .8-4.4v-5.6H3.3C1.8 17.1 1 20.5 1 24s.8 6.9 2.3 9.9l7.3-5.5z"/><path fill="#EA4335" d="M24 9.7c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.4 2.7 30.2.5 24 .5 15 .5 7.1 5.6 3.3 13.1l7.3 5.5C12.5 13.9 17.8 9.7 24 9.7z"/></svg> Posted on Google</div>
+        </div>
+
+        <div class="gr-card">
+          <div class="gr-card-top">
+            <div class="gr-avatar">C</div>
+            <div><div class="gr-name">Chrissy Kelly</div><div class="gr-date">Nov 2025</div></div>
+          </div>
+          <div class="gr-stars">★★★★★</div>
+          <p class="gr-text">"My nephews had an absolute blast! A fantastic outing with guide Aziz, riding through the sand dunes and along the beach to catch the sunset at Sidi Kaouki. They came back exhilarated and happy. Highly recommend!"</p>
+          <div class="gr-src"><svg viewBox="0 0 48 48"><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.6H24v8.7h12.4c-.5 2.7-2.1 5-4.4 6.6v5.4h7.1c4.2-3.9 6.6-9.6 6.6-16.1z"/><path fill="#34A853" d="M24 47c6.2 0 11.4-2 15.2-5.5l-7.1-5.4c-2 1.4-4.6 2.2-8.1 2.2-6.2 0-11.5-4.2-13.4-9.9H3.3v5.6C7.1 41.9 15 47 24 47z"/><path fill="#FBBC05" d="M10.6 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .8-4.4v-5.6H3.3C1.8 17.1 1 20.5 1 24s.8 6.9 2.3 9.9l7.3-5.5z"/><path fill="#EA4335" d="M24 9.7c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.4 2.7 30.2.5 24 .5 15 .5 7.1 5.6 3.3 13.1l7.3 5.5C12.5 13.9 17.8 9.7 24 9.7z"/></svg> Posted on Google</div>
+        </div>
+
+        <div class="gr-card">
+          <div class="gr-card-top">
+            <div class="gr-avatar">H</div>
+            <div><div class="gr-name">Houmadi Ilyasse</div><div class="gr-date">Dec 2025</div></div>
+          </div>
+          <div class="gr-stars">★★★★★</div>
+          <p class="gr-text">"★★★★★ — 5 stars!"</p>
+          <div class="gr-src"><svg viewBox="0 0 48 48"><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.6H24v8.7h12.4c-.5 2.7-2.1 5-4.4 6.6v5.4h7.1c4.2-3.9 6.6-9.6 6.6-16.1z"/><path fill="#34A853" d="M24 47c6.2 0 11.4-2 15.2-5.5l-7.1-5.4c-2 1.4-4.6 2.2-8.1 2.2-6.2 0-11.5-4.2-13.4-9.9H3.3v5.6C7.1 41.9 15 47 24 47z"/><path fill="#FBBC05" d="M10.6 28.4c-.5-1.4-.8-2.9-.8-4.4s.3-3 .8-4.4v-5.6H3.3C1.8 17.1 1 20.5 1 24s.8 6.9 2.3 9.9l7.3-5.5z"/><path fill="#EA4335" d="M24 9.7c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.4 2.7 30.2.5 24 .5 15 .5 7.1 5.6 3.3 13.1l7.3 5.5C12.5 13.9 17.8 9.7 24 9.7z"/></svg> Posted on Google</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="gr-nav">
+      <button class="gr-btn" id="grPrev" aria-label="Previous">‹</button>
+      <div class="gr-dots-wrap" id="grDots"></div>
+      <button class="gr-btn" id="grNext" aria-label="Next">›</button>
+    </div>
+
     <p class="grn" data-t="rev_note">✓ Verified Google Reviews — real guests, real adventures</p>
-    <a href="https://g.page/r/CRHMNeMdPGyqEBM/review" target="_blank" style="display:inline-flex;align-items:center;gap:.5rem;margin-top:1.2rem;background:#fff;color:#2A2118;padding:.7rem 1.5rem;border-radius:50px;font-size:.85rem;font-weight:700;text-decoration:none" data-t="rev_btn">⭐ Review us on Google</a>
+    <a href="https://g.page/r/CRHMNeMdPGyqEBM/review" target="_blank" style="display:inline-flex;align-items:center;gap:.5rem;margin-top:1.2rem;background:#fff;color:#2A2118;padding:.7rem 1.5rem;border-radius:50px;font-size:.85rem;font-weight:700;text-decoration:none" data-t="rev_btn">⭐ Leave us a Review</a>
   </div>
 </section>
 
@@ -736,6 +843,50 @@ function setLang(l,btn){
     el.innerHTML=t[k];
   });
 }
+
+// ── GOOGLE REVIEWS CAROUSEL
+(function(){
+  var track=document.getElementById('grTrack');
+  var dotsWrap=document.getElementById('grDots');
+  if(!track)return;
+  var cards=track.querySelectorAll('.gr-card');
+  var n=cards.length;
+  var cur=0;
+  var cardW=320+19; // card width + gap
+  var auto;
+
+  // build dots
+  for(var i=0;i<n;i++){
+    var d=document.createElement('div');
+    d.className='gr-dot'+(i===0?' active':'');
+    (function(idx){d.addEventListener('click',function(){go(idx);});})(i);
+    dotsWrap.appendChild(d);
+  }
+
+  function go(idx){
+    cur=(idx+n)%n;
+    var offset=cur*cardW;
+    // center the active card if possible
+    var containerW=track.parentElement.offsetWidth;
+    var shift=Math.max(0,Math.min(offset-(containerW/2-cardW/2), (n*cardW)-containerW));
+    track.style.transform='translateX(-'+shift+'px)';
+    dotsWrap.querySelectorAll('.gr-dot').forEach(function(dot,j){dot.classList.toggle('active',j===cur);});
+  }
+
+  document.getElementById('grPrev').addEventListener('click',function(){go(cur-1);resetAuto();});
+  document.getElementById('grNext').addEventListener('click',function(){go(cur+1);resetAuto();});
+
+  function resetAuto(){clearInterval(auto);auto=setInterval(function(){go(cur+1);},4500);}
+  resetAuto();
+
+  // touch swipe
+  var startX=0;
+  track.addEventListener('touchstart',function(e){startX=e.touches[0].clientX;},{passive:true});
+  track.addEventListener('touchend',function(e){
+    var dx=e.changedTouches[0].clientX-startX;
+    if(Math.abs(dx)>40){go(dx<0?cur+1:cur-1);resetAuto();}
+  },{passive:true});
+})();
 </script>
 </body>
 </html>
